@@ -23,7 +23,10 @@
         "drush-ops/behat-drush-endpoint": "^0.0.4",
         "guzzlehttp/guzzle": "^6.0@dev",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/workbench_access": "^1.0@beta",
+        "drupal/paragraphs": "^1.5",
+        "drupal/uswds_paragraphs": "^1.0@beta"
     },
     "repositories": {
         "drupal": {
