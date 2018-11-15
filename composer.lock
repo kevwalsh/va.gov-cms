@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "998b71a1c6c4a7fab5865ec3f7ae5195",
+=======
+    "content-hash": "f198a7ed143e4dfaa443a993b573239a",
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
     "packages": [
         {
             "name": "acquia/lightning",
@@ -639,8 +643,20 @@
             "require": {
                 "php": "~7.1"
             },
+<<<<<<< HEAD
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
+=======
+            "type": "bower-asset"
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:jquery/jquery-dist.git",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
             },
             "require-dev": {
                 "alcaeus/mongo-php-adapter": "^1.1",
@@ -3788,8 +3804,71 @@
             }
         },
         {
+<<<<<<< HEAD
             "name": "drupal/openapi_ui_redoc",
             "version": "1.0.0-rc2",
+=======
+            "name": "drupal/entity_reference_revisions",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity_reference_revisions",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "82d515de04d3a75fb677ed82241a6aff3f54ab47"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/diff": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1539588781",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Adds a Entity Reference field type with revision support.",
+            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/image_widget_crop",
+            "version": "2.2.0",
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/openapi_ui_redoc",
@@ -5265,8 +5344,93 @@
             "time": "2016-12-20T10:07:11+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "guzzlehttp/psr7",
             "version": "1.4.2",
+=======
+            "name": "drupal/paragraphs",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "85ba97dd1c602d33fc5904b6e1df5973312afa94"
+            },
+            "require": {
+                "drupal/core": "~8",
+                "drupal/entity_reference_revisions": "~1.3"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/ctools": "3.x-dev",
+                "drupal/diff": "~1.0",
+                "drupal/entity_browser": "1.x-dev",
+                "drupal/entity_usage": "2.x-dev",
+                "drupal/field_group": "~1.0",
+                "drupal/inline_entity_form": "~1.0",
+                "drupal/paragraphs-paragraphs_library": "*",
+                "drupal/replicate": "~1.0",
+                "drupal/search_api": "~1.0",
+                "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/entity_browser": "Recommended for an improved user experience when using the Paragraphs library module"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1541009695",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Enables the creation of Paragraphs entities.",
+            "homepage": "https://www.drupal.org/project/paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "1.3.0",
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
@@ -5803,8 +5967,62 @@
             "time": "2017-09-11T18:02:19+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phpdocumentor/reflection-docblock",
             "version": "4.3.0",
+=======
+            "name": "drupal/uswds_paragraphs",
+            "version": "1.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/uswds_paragraphs",
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/uswds_paragraphs-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "902793c92fe686bed4df4ac714f26bbf357f4494"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1502243644",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "brockfanning",
+                    "homepage": "https://www.drupal.org/user/709486"
+                }
+            ],
+            "description": "Paragraph types intended for use with the U.S. Web Design Standards library.",
+            "homepage": "https://www.drupal.org/project/uswds_paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/uswds_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/uswds_paragraphs?categories=All"
+            }
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "2.0.0",
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
@@ -5901,8 +6119,76 @@
             "time": "2017-07-14T14:27:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "psr/container",
             "version": "1.0.0",
+=======
+            "name": "drupal/workbench_access",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/workbench_access",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/workbench_access-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "976ae351d6984e6e920307dbf92b43f7f6efdecc"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1525788697",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "agentrickard",
+                    "homepage": "https://www.drupal.org/user/20975"
+                },
+                {
+                    "name": "becw",
+                    "homepage": "https://www.drupal.org/user/81067"
+                },
+                {
+                    "name": "robeano",
+                    "homepage": "https://www.drupal.org/user/67660"
+                },
+                {
+                    "name": "stevector",
+                    "homepage": "https://www.drupal.org/user/179805"
+                }
+            ],
+            "description": "Hierarchical access control for content.",
+            "homepage": "https://www.drupal.org/project/workbench_access",
+            "support": {
+                "source": "http://cgit.drupalcode.org/workbench_access"
+            }
+        },
+        {
+            "name": "drush-ops/behat-drush-endpoint",
+            "version": "0.0.4",
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
@@ -12748,6 +13034,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/uswds": 10,
+<<<<<<< HEAD
+=======
+        "guzzlehttp/guzzle": 20,
+        "drupal/workbench_access": 10,
+        "drupal/uswds_paragraphs": 10,
+>>>>>>> add workbench_access paragraphs uswds_paragraphs
         "acquia/lightning_dev": 20
     },
     "prefer-stable": true,
