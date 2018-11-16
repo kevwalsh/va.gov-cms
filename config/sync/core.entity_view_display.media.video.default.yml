@@ -7,8 +7,90 @@ dependencies:
     - field.field.media.video.field_media_video_embed_field
     - media.type.video
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - user
     - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          0d355082-b393-4531-869a-b94aebc71d4c:
+            uuid: 0d355082-b393-4531-869a-b94aebc71d4c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:name'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          dc46657c-6083-40f6-8a23-6de414af513c:
+            uuid: dc46657c-6083-40f6-8a23-6de414af513c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:created'
+              formatter:
+                label: hidden
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          4e213a7c-f474-4f84-8e99-47c8cb692a3e:
+            uuid: 4e213a7c-f474-4f84-8e99-47c8cb692a3e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:uid'
+              formatter:
+                label: hidden
+                type: author
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          cdd28077-5173-49d5-9d70-201fd5daffbd:
+            uuid: cdd28077-5173-49d5-9d70-201fd5daffbd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_video_embed_field'
+              formatter:
+                type: video_embed_field_video
+                label: hidden
+                settings:
+                  responsive: true
+                  width: 854
+                  height: 480
+                  autoplay: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
 _core:
   default_config_hash: ULSDSeb1LGUAS40ia_8qngabv0GTcJAaHGl67xDUNsA
 id: media.video.default

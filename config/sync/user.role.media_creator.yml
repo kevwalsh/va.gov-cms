@@ -15,3 +15,4 @@ permissions:
   - 'delete media'
   - 'dropzone upload files'
   - 'update media'
+  - 'use workbench access'

@@ -8,7 +8,36 @@ dependencies:
     - field.field.media.tweet.field_media_in_library
     - media.type.tweet
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - media_entity_twitter
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          cc76cccd-9d48-4162-bf07-72ec7524e050:
+            uuid: cc76cccd-9d48-4162-bf07-72ec7524e050
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:tweet:embed_code'
+              formatter:
+                type: twitter_embed
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: 576jZt8I-8Q1YDaS7WRwUEkAFKl2XEXG9X6aS00uiEc
 id: media.tweet.embedded

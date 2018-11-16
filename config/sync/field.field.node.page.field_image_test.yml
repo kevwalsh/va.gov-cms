@@ -1,0 +1,52 @@
+uuid: e28070be-f7ac-44c5-b5ee-5fa0fd39bb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_test
+    - node.type.page
+    - paragraphs.paragraphs_type.uswds_media_block
+  module:
+    - entity_reference_revisions
+id: node.page.field_image_test
+field_name: field_image_test
+entity_type: node
+bundle: page
+label: 'Image test'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      uswds_media_block: uswds_media_block
+    target_bundles_drag_drop:
+      uswds_accordion:
+        weight: 9
+        enabled: false
+      uswds_accordion_item:
+        weight: 10
+        enabled: false
+      uswds_column:
+        weight: 11
+        enabled: false
+      uswds_graphic_list:
+        weight: 12
+        enabled: false
+      uswds_grid:
+        weight: 13
+        enabled: false
+      uswds_hero:
+        weight: 14
+        enabled: false
+      uswds_media_block:
+        enabled: true
+        weight: 15
+      uswds_text:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

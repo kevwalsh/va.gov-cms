@@ -1,0 +1,28 @@
+uuid: 78444213-66c6-4eef-8e02-d2eb53462612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_file
+    - media.type.image
+    - paragraphs.paragraphs_type.uswds_media_block
+id: paragraph.uswds_media_block.field_media_file
+field_name: field_media_file
+entity_type: paragraph
+bundle: uswds_media_block
+label: 'media file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

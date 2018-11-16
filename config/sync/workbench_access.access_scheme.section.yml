@@ -1,0 +1,29 @@
+uuid: 87a6cc29-8570-4af6-9e42-d3872a2138dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_hub
+    - field.field.node.page.field_terms
+    - field.field.paragraph.uswds_media_block.field_terms
+    - taxonomy.vocabulary.vba
+id: section
+label: Hub
+plural_label: Hubs
+scheme: taxonomy
+scheme_settings:
+  vocabularies:
+    - vba
+  fields:
+    -
+      entity_type: media
+      bundle: image
+      field: field_hub
+    -
+      entity_type: node
+      bundle: page
+      field: field_terms
+    -
+      entity_type: paragraph
+      bundle: uswds_media_block
+      field: field_terms

@@ -8,7 +8,38 @@ dependencies:
     - field.field.media.image.image
     - media.type.image
   module:
+    - field_layout
     - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          f07c66dd-ece3-4f97-b5bd-be9225565ff8:
+            uuid: f07c66dd-ece3-4f97-b5bd-be9225565ff8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:image:image'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: FaHkkj9J9DxKQ-R7RNddSDq_d0D6UBY3hoKzoAQoGaw
 id: media.image.embedded

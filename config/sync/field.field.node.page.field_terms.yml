@@ -1,0 +1,29 @@
+uuid: 0ad97dd5-5e86-41a8-a792-b72776faf2b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms
+    - node.type.page
+    - taxonomy.vocabulary.vba
+id: node.page.field_terms
+field_name: field_terms
+entity_type: node
+bundle: page
+label: Terms
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      vba: vba
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

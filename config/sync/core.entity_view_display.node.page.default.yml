@@ -4,12 +4,103 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_image_test
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_terms
+    - field.field.node.page.panelizer
     - node.type.page
   module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - metatag
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ee8dd435-9e2d-4e04-b619-c9939334fb64:
+            uuid: ee8dd435-9e2d-4e04-b619-c9939334fb64
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          ce5d2832-59d0-4e55-a050-a77180c82920:
+            uuid: ce5d2832-59d0-4e55-a050-a77180c82920
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:page:links'
+            additional: {  }
+            weight: 1
+          a62bf52d-905c-4f91-8c5e-4ccca630e989:
+            uuid: a62bf52d-905c-4f91-8c5e-4ccca630e989
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_meta_tags'
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          8ef731db-90c4-4075-88ce-250c36e5997a:
+            uuid: 8ef731db-90c4-4075-88ce-250c36e5997a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_image_test'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          a485b363-2fd2-47d4-83b7-3019a395a3ca:
+            uuid: a485b363-2fd2-47d4-83b7-3019a395a3ca
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_terms'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 4
 _core:
   default_config_hash: Kfxnq5Imio9VFBoNa_PIkzXoTmjz_T-EY3mOrwDTddU
 id: node.page.default
@@ -24,6 +115,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_image_test:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_meta_tags:
     type: metatag_empty_formatter
     region: content
@@ -31,6 +131,14 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
+  field_terms:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 1
     settings: {  }

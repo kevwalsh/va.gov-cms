@@ -1,0 +1,11 @@
+uuid: c9adf33e-20c4-40ef-89a0-22f8fecdcc20
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: F-3AQHmzn0sObYHRsLDXMk2mh7nKeMmnRCH2973YQOY
+id: uswds_accordion_item
+label: 'Accordion Item'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

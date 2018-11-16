@@ -9,6 +9,9 @@ dependencies:
     - field.field.node.landing_page.panelizer
     - node.type.landing_page
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - metatag
     - panelizer
     - user
@@ -61,6 +64,41 @@ third_party_settings:
         static_context: {  }
     allow: true
     default: default
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          254abc9c-d29d-4d32-8652-4b05f10b9911:
+            uuid: 254abc9c-d29d-4d32-8652-4b05f10b9911
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:landing_page:links'
+            additional: {  }
+            weight: 0
+          351c8836-6eef-479a-87cd-37c0a9ea14f7:
+            uuid: 351c8836-6eef-479a-87cd-37c0a9ea14f7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:landing_page:field_meta_tags'
+              formatter:
+                type: metatag_empty_formatter
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
 _core:
   default_config_hash: 4Jl7ekV85NPAM5Ybd0AMFm6PQR2aKcpP-7iTTlXph9Q
 id: node.landing_page.full

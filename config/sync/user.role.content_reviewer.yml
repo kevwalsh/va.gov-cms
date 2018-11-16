@@ -26,6 +26,8 @@ permissions:
   - 'use editorial transition create_new_draft'
   - 'use editorial transition review'
   - 'use editorial transition stage_for_publishing'
+  - 'use text format rich_text'
+  - 'use workbench access'
   - 'view all revisions'
   - 'view any unpublished content'
   - 'view landing_page revisions'

@@ -9,7 +9,38 @@ dependencies:
     - image.style.medium
     - media.type.instagram
   module:
+    - field_layout
     - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          00f0bef6-e0f6-4020-95c0-39bf842dc789:
+            uuid: 00f0bef6-e0f6-4020-95c0-39bf842dc789
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:instagram:thumbnail'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: 1DOWWQCf9RT-KOigclqslxmujlvMK2M9xJnzaLcDX3o
 id: media.instagram.thumbnail

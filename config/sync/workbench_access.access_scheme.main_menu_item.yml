@@ -1,0 +1,16 @@
+uuid: b1869969-d62b-4b26-8fc8-07556db6f3e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+    - system.menu.main
+id: main_menu_item
+label: 'Main menu item'
+plural_label: 'Main menu items'
+scheme: menu
+scheme_settings:
+  menus:
+    - main
+  bundles:
+    - page

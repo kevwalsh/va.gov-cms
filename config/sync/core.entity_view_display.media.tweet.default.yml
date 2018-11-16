@@ -7,7 +7,36 @@ dependencies:
     - field.field.media.tweet.field_media_in_library
     - media.type.tweet
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - media_entity_twitter
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          b6ac61ab-a86b-4df7-89ec-69c8ef616e0d:
+            uuid: b6ac61ab-a86b-4df7-89ec-69c8ef616e0d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:tweet:embed_code'
+              formatter:
+                type: twitter_embed
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: 8ohzA6h74CR-H9GvTW07BJp5FekrvcklYgP579UaQ-g
 id: media.tweet.default

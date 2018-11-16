@@ -9,7 +9,38 @@ dependencies:
     - image.style.medium
     - media.type.audio_file
   module:
+    - field_layout
     - image
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          0fa3df9e-1645-488f-b5ad-05990f5280d4:
+            uuid: 0fa3df9e-1645-488f-b5ad-05990f5280d4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:audio_file:thumbnail'
+              formatter:
+                type: image
+                label: visually_hidden
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: ZkdF5ut1PZ1MPJH9FMPRDYMyuI42lGa5R3QGTTU-LdY
 id: media.audio_file.thumbnail

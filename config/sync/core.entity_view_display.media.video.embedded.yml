@@ -8,7 +8,40 @@ dependencies:
     - field.field.media.video.field_media_video_embed_field
     - media.type.video
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - video_embed_field
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          24c4a145-1c42-4f84-8b94-c7ca2fa3fb67:
+            uuid: 24c4a145-1c42-4f84-8b94-c7ca2fa3fb67
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:media:video:field_media_video_embed_field'
+              formatter:
+                type: video_embed_field_video
+                label: hidden
+                settings:
+                  responsive: true
+                  width: 854
+                  height: 480
+                  autoplay: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
 _core:
   default_config_hash: DSsWBWw_gj2xxlQ12665l-yIIfFWIt7DJX33DGgbEHY
 id: media.video.embedded
