@@ -20,5 +20,4 @@ permissions:
   - 'create terms in administration'
   - 'delete terms in administration'
   - 'edit terms in administration'
-  - 'view unpublished paragraphs'
   - 'view workbench access information'
