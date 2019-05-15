@@ -3,19 +3,45 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.health_care_local_health_service.field_administration
     - field.field.node.health_care_local_health_service.field_body
     - field.field.node.health_care_local_health_service.field_facility_location
+    - field.field.node.health_care_local_health_service.field_office
     - field.field.node.health_care_local_health_service.field_regional_health_service
     - node.type.health_care_local_health_service
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_governance:
+      children:
+        - field_administration
+      parent_name: ''
+      weight: 4
+      format_type: details_sidebar
+      format_settings:
+        description: ''
+        open: '1'
+        weight: '0'
+        required_fields: '1'
+        id: ''
+        classes: ''
+      label: Governance
+      region: content
 id: node.health_care_local_health_service.default
 targetEntityType: node
 bundle: health_care_local_health_service
 mode: default
 content:
+  field_administration:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_body:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -28,8 +54,14 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_regional_health_service:
+  field_office:
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_regional_health_service:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select

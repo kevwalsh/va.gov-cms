@@ -1,0 +1,33 @@
+uuid: 925a2246-58e4-4f2e-907f-711c83ba8444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office
+    - node.type.health_care_local_health_service
+    - node.type.health_care_region_page
+  content:
+    - 'node:health_care_region_page:2bddb1a7-6fb1-4503-838d-9c2fcb51c46a'
+id: node.health_care_local_health_service.field_office
+field_name: field_office
+entity_type: node
+bundle: health_care_local_health_service
+label: 'Health care system'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 2bddb1a7-6fb1-4503-838d-9c2fcb51c46a
+default_value_callback: ''
+settings:
+  handler: unpublished
+  handler_settings:
+    target_bundles:
+      health_care_region_page: health_care_region_page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: entity_reference

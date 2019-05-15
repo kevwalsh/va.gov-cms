@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.promo.field_owner
     - field.field.node.event.field_administration
     - field.field.node.health_care_local_facility.field_administration
+    - field.field.node.health_care_local_health_service.field_administration
     - field.field.node.health_care_region_detail_page.field_administration
     - field.field.node.health_care_region_page.field_administration
     - field.field.node.landing_page.field_administration
@@ -82,6 +83,10 @@ scheme_settings:
     -
       entity_type: node
       bundle: health_care_region_detail_page
+      field: field_administration
+    -
+      entity_type: node
+      bundle: health_care_local_health_service
       field: field_administration
     -
       entity_type: taxonomy_term
