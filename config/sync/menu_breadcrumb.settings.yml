@@ -45,8 +45,8 @@ menu_breadcrumb_menus:
     taxattach: 0
     langhandle: 0
   pittsburgh-health-care:
+    enabled: 1
     weight: -3
-    enabled: 0
     taxattach: 0
     langhandle: 0
   records-benefits-hub:
