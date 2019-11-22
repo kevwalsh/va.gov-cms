@@ -94,7 +94,7 @@ Feature: Content model
 | Content type | Detail Page | Summary | field_description | Text (plain) | Required | 1 | Textfield with counter | Translatable |
 | Content type | Detail Page | Featured content | field_featured_content | Entity reference revisions |  | Unlimited | Paragraphs EXPERIMENTAL | Translatable |
 | Content type | Detail Page | Intro text | field_intro_text | Text (plain, long) | Required | 1 | Textarea (multiple rows) with counter | Translatable |
-| Content type | Detail Page | Downloads | field_media | Entity reference |  | 1 | Entity browser | Translatable |
+| Content type | Detail Page | Downloads | field_media | Entity reference |  | 1 | -- Disabled -- | Translatable |
 | Content type | Detail Page | Meta tags | field_meta_tags | Meta tags |  | 1 | Advanced meta tags form | Translatable |
 | Content type | Detail Page | Meta title tag | field_meta_title | Text (plain) | Required | 1 | Textfield with counter | Translatable |
 | Content type | Detail Page | Related office or health care system | field_office | Entity reference | Required | 1 | Select list | Translatable |
@@ -228,10 +228,6 @@ Feature: Content model
 | Content type | VAMC system | Community stories intro text | field_intro_text_news_stories | Text (formatted, long) |  | 1 | Textarea (multiple rows) with counter |  |
 | Content type | VAMC system | Press releases intro text | field_intro_text_press_releases | Text (plain, long) |  | 1 | Text area (multiple rows) |  |
 | Content type | VAMC system | Leadership team | field_leadership | Entity reference |  | Unlimited | Autocomplete |  |
-| Content type | VAMC system | Emergency updates email list               | field_link_facility_emerg_list | Link         |          | 1 | -- Disabled -- |  |
-| Content type | VAMC system | News and announcements email list          | field_link_facility_news_list  | Link         |          | 1 | -- Disabled -- |  |
-| Content type | VAMC system | GovDelivery ID for News and Announcements  | field_govdelivery_id_news      | Text (plain) | Required | 1 | Textfield      |  |
-| Content type | VAMC system | GovDelivery ID for Emergency updates email | field_govdelivery_id_emerg     | Text (plain) | Required | 1 | Textfield      |  |
 | Content type | VAMC system | Email lists | field_links | Link |  | Unlimited | -- Disabled -- | Translatable |
 | Content type | VAMC system | Our Locations intro text | field_locations_intro_blurb | Text (formatted, long) | Required | 1 | Text area (multiple rows) |  |
 | Content type | VAMC system | Banner image | field_media | Entity reference |  | 1 | Media library | Translatable |
@@ -248,7 +244,8 @@ Feature: Content model
 | Content type | VAMC system banner alert with situation updates | Alert dismissable? | field_alert_dismissable | Boolean |  | 1 | Single on/off checkbox |  |
 | Content type | VAMC system banner alert with situation updates | Display "Subscribe to email updates" link? | field_alert_email_updates_button | Boolean |  | 1 | Single on/off checkbox |  |
 | Content type | VAMC system banner alert with situation updates | Display "Find other VA facilities near you" link? | field_alert_find_facilities_cta | Boolean |  | 1 | Single on/off checkbox |  |
-| Content type | VAMC system banner alert with situation updates | Only show on VAMC System Page & Operating Status Page | field_alert_inheritance_subpages | Boolean |  | 1 | Single on/off checkbox |  |
+| Content type | VAMC system banner alert with situation updates | Computed values for alerts | field_banner_alert_computdvalues | Computed (text, long)
+ |  | 1 | -- Disabled -- |  |
 | Content type | VAMC system banner alert with situation updates | Display "Get updates on affected services and facilities" link | field_alert_operating_status_cta | Boolean |  | 1 | Single on/off checkbox |  |
 | Content type | VAMC system banner alert with situation updates | Alert type | field_alert_type | List (text) | Required | 1 | Select list |  |
 | Content type | VAMC system banner alert with situation updates | Situation information | field_banner_alert_situationinfo | Text (formatted, long) |  | 1 | Text area (multiple rows) |  |
@@ -356,3 +353,6 @@ Feature: Content model
 | Vocabulary | VHA health service taxonomy | Health Service API ID | field_health_service_api_id | Text (plain) |  | 1 | Textfield |  |
 | Vocabulary | VHA health service taxonomy | Owner | field_owner | Entity reference | Required | 1 | Select list |  |
 | Vocabulary | VHA health service taxonomy | VHA Stop code | field_vha_healthservice_stopcode | Number (integer) |  | 1 | Number field |  |
+| Content type | VAMC system banner alert with situation updates | Only show on VAMC System Page & Operating Status Page | field_alert_inheritance_subpages | Boolean |  | 1 | Single on/off checkbox |  |
+| Content type | VAMC system | GovDelivery ID for Emergency updates email | field_govdelivery_id_emerg | Text (plain) | Required | 1 | Textfield |  |
+| Content type | VAMC system | GovDelivery ID for News and Announcements | field_govdelivery_id_news | Text (plain) | Required | 1 | Textfield |  |
